@@ -44,7 +44,7 @@ if __name__ == "__main__":
     t1 = time.time()
     
     # number of iterations
-    N = 10**4
+    N = 10**2
     # counter
     n = 0
     # bingo!
@@ -55,10 +55,8 @@ if __name__ == "__main__":
         x = np.random.rand(3) * 360.0
         
         # let's do a plot if it's not too crazy...
-        if n < 50:
+        if n < 6:
             plt.plot([cos(xi) for xi in x], [sin(xi) for xi in x])
-        else:
-            plt.show()
         
         # assume a circle with radius = 1, calculate dist of each point-to-point
         d1 = dist(x[0], x[1])
@@ -73,7 +71,9 @@ if __name__ == "__main__":
             
         n += 1
     
-    plt.savefig('Circle.png')
+#    plt.axis('equal')
+#    plt.savefig('Circle.png')
+        
     # time it
     t2 = time.time()
     print('Number of iterations:', N)
