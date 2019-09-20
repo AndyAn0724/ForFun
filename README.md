@@ -5,6 +5,7 @@ Some cool pet projects. :)
 This is a cool probability problem. 
 ### Question: 
     Assume 3 points on a circle. What is the probability of all points in one semi-circle?
+![Circle3](images/CircleWith3Points.png)    
 
 ### Idea:
 3 points on a circle must give a triangle. 
