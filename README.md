@@ -16,3 +16,5 @@ Assume N points on a circle. What is the probability of all points in one semi-c
 
 N points give 3Cn number of traingles... 
 If all of them are Obtuse/Right triangles. All points must be on one semi-circle.
+
+![Circle](images/Circle.png)
