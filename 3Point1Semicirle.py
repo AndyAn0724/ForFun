@@ -3,15 +3,17 @@
 Question: 
     Assume 3 points on a circle. What is the probability of all points in one semi-circle?
 
-Idea:
+Method 1: 
+    Use triangle interior angle >= 90.
     3 points on a circle must give a triangle. 
-    If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-circle. 
+    If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-circle.  
 
-
-Generalization idea:
-    Assume N points on a circle. What is the probability of all points in one semi-circle?
---> N points give 3Cn number of traingles... 
-    If all of them are Obtuse/Right triangles. All points must be on one semi-circle.
+Method 2: generalized method.
+   Use the relationships btw each angle.
+   First sort all generated angles ascending. 
+   All N points must be on the same semi-circle if: 
+   1. angle_max - angle_min <= 180, OR
+   2. angle_i - angle_i-1 >= 180.    
     
 """
 
