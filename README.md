@@ -18,8 +18,8 @@ If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-ci
 1. We could still use Method 1 idea to generalize, but it's not very efficient: N points give 3Cn number of traingles... If all of them are Obtuse/Right triangles. All points must be on one semi-circle.
 2. We could think about the relationship between angles we generated: 
     First sort all generated angles ascendingly. Then, all N points must be on the same semi-circle if: 
-    1. x_max - x_min <= 180, OR
-    2. x_i - x_i-1 >= 180. 
+    1. angle_max - angle_min <= 180, OR
+    2. angle_i - angle_i-1 >= 180. 
 3. Mathematical reasoning result: Prob(N points on semi-circle) = <img src="https://latex.codecogs.com/gif.latex?\frac{N}{2^{N-1}}" />
 
 
