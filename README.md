@@ -10,7 +10,7 @@ This is a cool probability problem.
 ### Method 1:
 3 points on a circle must give a triangle. 
 If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-circle. 
-
+![Circle](images/Circle.png)
 
 ### Method 2 (generalized to N points):
     Assume N points on a circle. What is the probability of all points in one semi-circle?
@@ -20,5 +20,21 @@ If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-ci
     First sort all generated angles ascendingly. Then, all N points must be on the same semi-circle if: 
     1. x_max - x_min <= 180, OR
     2. x_i - x_i-1 >= 180. 
+3. Mathematical reasoning result: Prob(N points on semi-circle) = <img src="https://latex.codecogs.com/gif.latex?\frac{N}{2^{N-1}}" />
 
-![Circle](images/Circle.png)
+
+### Results: 
+    Number of iterations: 100000
+    Number of points: 10
+    Correct result: 0.01953125
+    Simulated result (Method 2): 0.01989
+    Total time took (Method 2): 1.9053 seconds
+
+    Time testing for Method 2:
+    Running Method 2 for 100 iterations, took 0.005 seconds.
+    Running Method 2 for 500 iterations, took 0.0175 seconds.
+    Running Method 2 for 1000 iterations, took 0.0191 seconds.
+    Running Method 2 for 5000 iterations, took 0.0948 seconds.
+    Running Method 2 for 10000 iterations, took 0.1906 seconds.
+    Running Method 2 for 50000 iterations, took 0.9913 seconds.
+![Time](images/time_3p1sc.png)
