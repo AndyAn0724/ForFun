@@ -8,6 +8,7 @@ This is an interesting probability problem.
 
 ### Method 1:
 We could use some Trigonometry. 3 points on a circle must give a triangle. If the triangle is a Obtuse/Right triangle, then 3 points must be on one semi-circle. 
+
 ![Circle](images/Circle.png)
 
 ### Method 2 (generalized to N points):
