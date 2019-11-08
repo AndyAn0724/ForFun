@@ -2,7 +2,8 @@
 """
 Created on Wed Nov  6 13:28:18 2019
 
-Use z1, z2, z3 ~ N(0, 1) to generate x1, x2, x3 (5000 samples) with the given covariance matrix & mu.
+Generate random correlated variables. 
+    Use z1, z2, z3 ~ N(0, 1) to generate x1, x2, x3 (5000 samples) with the given covariance matrix & mu.
 
 @author: andy.an
 """
