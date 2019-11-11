@@ -9,7 +9,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 num_point = 50
-x = np.linspace(1, 6, num_point)
+x = np.sort(np.random.rand(num_point) * 6.0 + 1.0)
+#x = np.linspace(1, 6, num_point)
 noise = np.random.randn(num_point) * 3.0
 
 # let's draw: y = ax + b + noise
